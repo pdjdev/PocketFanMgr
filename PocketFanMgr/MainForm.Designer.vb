@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
     Inherits System.Windows.Forms.Form
 
     'Form은 Dispose를 재정의하여 구성 요소 목록을 정리합니다.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,85 +20,85 @@ Partial Class MainForm
     '참고: 다음 프로시저는 Windows Form 디자이너에 필요합니다.
     '수정하려면 Windows Form 디자이너를 사용하십시오.  
     '코드 편집기에서는 수정하지 마세요.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.CloseBT = New System.Windows.Forms.PictureBox()
+        Me.BT3 = New System.Windows.Forms.PictureBox()
+        Me.BT2 = New System.Windows.Forms.PictureBox()
+        Me.BT1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CloseBT, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BT3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BT2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BT1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.CloseBT)
+        Me.Panel1.Controls.Add(Me.BT3)
+        Me.Panel1.Controls.Add(Me.BT2)
+        Me.Panel1.Controls.Add(Me.BT1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(1, 1)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Padding = New System.Windows.Forms.Padding(15)
-        Me.Panel1.Size = New System.Drawing.Size(346, 135)
+        Me.Panel1.Padding = New System.Windows.Forms.Padding(23)
+        Me.Panel1.Size = New System.Drawing.Size(520, 204)
         Me.Panel1.TabIndex = 0
         '
-        'PictureBox4
+        'CloseBT
         '
-        Me.PictureBox4.Image = Global.PocketFanMgr.My.Resources.Resources.closeicon
-        Me.PictureBox4.Location = New System.Drawing.Point(323, 1)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(22, 22)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
+        Me.CloseBT.Image = Global.PocketFanMgr.My.Resources.Resources.closeicon
+        Me.CloseBT.Location = New System.Drawing.Point(469, 1)
+        Me.CloseBT.Name = "CloseBT"
+        Me.CloseBT.Size = New System.Drawing.Size(50, 50)
+        Me.CloseBT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.CloseBT.TabIndex = 3
+        Me.CloseBT.TabStop = False
         '
-        'PictureBox3
+        'BT3
         '
-        Me.PictureBox3.Image = Global.PocketFanMgr.My.Resources.Resources.fan_turbo
-        Me.PictureBox3.Location = New System.Drawing.Point(235, 25)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(10)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(85, 85)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 2
-        Me.PictureBox3.TabStop = False
+        Me.BT3.Image = Global.PocketFanMgr.My.Resources.Resources.fan_turbo
+        Me.BT3.Location = New System.Drawing.Point(354, 38)
+        Me.BT3.Margin = New System.Windows.Forms.Padding(15)
+        Me.BT3.Name = "BT3"
+        Me.BT3.Size = New System.Drawing.Size(128, 128)
+        Me.BT3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BT3.TabIndex = 2
+        Me.BT3.TabStop = False
         '
-        'PictureBox2
+        'BT2
         '
-        Me.PictureBox2.Image = Global.PocketFanMgr.My.Resources.Resources.fan_sleep
-        Me.PictureBox2.Location = New System.Drawing.Point(130, 25)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(10)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(85, 85)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.BT2.Image = Global.PocketFanMgr.My.Resources.Resources.fan_sleep
+        Me.BT2.Location = New System.Drawing.Point(196, 38)
+        Me.BT2.Margin = New System.Windows.Forms.Padding(15)
+        Me.BT2.Name = "BT2"
+        Me.BT2.Size = New System.Drawing.Size(128, 128)
+        Me.BT2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BT2.TabIndex = 1
+        Me.BT2.TabStop = False
         '
-        'PictureBox1
+        'BT1
         '
-        Me.PictureBox1.Image = Global.PocketFanMgr.My.Resources.Resources.fan_auto
-        Me.PictureBox1.Location = New System.Drawing.Point(25, 25)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(85, 85)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.BT1.Image = Global.PocketFanMgr.My.Resources.Resources.fan_auto
+        Me.BT1.Location = New System.Drawing.Point(38, 38)
+        Me.BT1.Margin = New System.Windows.Forms.Padding(15)
+        Me.BT1.Name = "BT1"
+        Me.BT1.Size = New System.Drawing.Size(128, 128)
+        Me.BT1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.BT1.TabIndex = 0
+        Me.BT1.TabStop = False
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.DimGray
-        Me.ClientSize = New System.Drawing.Size(348, 137)
+        Me.ClientSize = New System.Drawing.Size(522, 206)
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("맑은 고딕", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -106,20 +106,21 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.Padding = New System.Windows.Forms.Padding(1)
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MainForm"
+        Me.Text = "PocketFanMgr"
+        Me.TopMost = True
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CloseBT, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BT3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BT2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BT1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents BT1 As PictureBox
+    Friend WithEvents BT3 As PictureBox
+    Friend WithEvents BT2 As PictureBox
+    Friend WithEvents CloseBT As PictureBox
 End Class

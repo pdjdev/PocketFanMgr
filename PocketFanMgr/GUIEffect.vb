@@ -49,6 +49,12 @@ Module GUIEffect
 
 
 #Region "창 페이드 인/아웃 효과"
+
+    ''' <summary>
+    ''' 폼의 페이드 인 효과입니다
+    ''' </summary>
+    ''' <param name="Form">대상 폼</param>
+    ''' <param name="goalopacity">목표 투명도</param>
     Public Sub FadeIn(Form As Form, goalopacity As Double)
         Form.Opacity = 0
 
@@ -61,6 +67,10 @@ Module GUIEffect
         Form.Opacity = goalopacity
     End Sub
 
+    ''' <summary>
+    ''' 폼의 페이드 아웃 효과입니다
+    ''' </summary>
+    ''' <param name="Form">대상 폼</param>
     Public Sub FadeOut(Form As Form)
 
         Do While Not Form.Opacity = 0
@@ -68,6 +78,72 @@ Module GUIEffect
             Threading.Thread.Sleep(10)
         Loop
 
+    End Sub
+#End Region
+
+
+#Region "컨트롤 조정"
+    '참조 코드:http://justsomevbcode.blogspot.com/2011/06/how-to-find-all-child-controls-from.html
+    'by Adam Zuckerman
+
+    ''' <summary>
+    ''' 재귀적으로 폼에 있는 모든 컨트롤을 탐색합니다
+    ''' </summary>
+    <System.Runtime.CompilerServices.Extension()>
+    Public Function FindAllChildren(ByRef StartingContainer As System.Windows.Forms.Form) As List(Of System.Windows.Forms.Control)
+        Dim Children As New List(Of System.Windows.Forms.Control)
+
+        Dim oControl As System.Windows.Forms.Control
+        For Each oControl In StartingContainer.Controls
+            Children.Add(oControl)
+            If oControl.HasChildren Then
+                Children.AddRange(oControl.FindAllChildren())
+            End If
+        Next
+
+        Return Children
+    End Function
+
+    ''' <summary>
+    ''' 컨트롤의 모든 컨트롤을 탐색합니다
+    ''' </summary>
+    <System.Runtime.CompilerServices.Extension()>
+    Public Function FindAllChildren(ByRef StartingContainer As System.Windows.Forms.Control) As List(Of System.Windows.Forms.Control)
+        Dim Children As New List(Of System.Windows.Forms.Control)
+
+        If StartingContainer.HasChildren = False Then
+            Return Nothing
+        Else
+            Dim oControl As System.Windows.Forms.Control
+            For Each oControl In StartingContainer.Controls
+                Children.Add(oControl)
+                If oControl.HasChildren Then
+                    Children.AddRange(oControl.FindAllChildren())
+                End If
+            Next
+        End If
+
+        Return Children
+    End Function
+
+    ''' <summary>
+    ''' 폼을 확대합니다
+    ''' </summary>
+    ''' <param name="Form">대상 폼</param>
+    ''' <param name="ZoomFactor">확대 배수</param>
+    ''' <param name="Refresh">Refresh 여부</param>
+    Public Sub ZoomForm(Form As Form, ZoomFactor As Double, Refresh As Boolean)
+
+        Form.Width *= 2
+        Form.Height *= 2
+
+        For Each c As Control In Form.FindAllChildren
+            c.Width *= 2
+            c.Height *= 2
+            c.Location = New Point(c.Location.X * 2, c.Location.Y * 2)
+        Next
+
+        If Refresh Then Form.Refresh()
     End Sub
 #End Region
 

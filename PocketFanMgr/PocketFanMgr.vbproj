@@ -78,6 +78,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FanCtrl.vb" />
     <Compile Include="GUIEffect.vb" />
     <Compile Include="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -100,6 +101,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="WaitMsg.Designer.vb">
+      <DependentUpon>WaitMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainForm.resx">
@@ -110,6 +117,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitMsg.resx">
+      <DependentUpon>WaitMsg.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
